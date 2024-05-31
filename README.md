@@ -103,4 +103,46 @@ whenever the code changes.
     }
 ```
 
+**Mutations**
+#
+1. Mutations are used to change our data in some fashion.
+Mutations can be used to delete records, update them, or even create new records.
+2. `new GraphQLNonNull(GraphQLString)` it will be used to so that args must accept some string without being passed empty
+3. ! on graphql fields on web page states that it is a required field to pass
+4. Below is the query to add user through mutation
+```
+ mutation {
+      addUser(firstName:"saketh", age: 10, companyId: "2") {
+        id,
+      firstName,
+        age,
+        company {
+          id
+        }
+    }
+    }
+
+```
+```
+
+    mutation {
+      deleteUser(id:"zYcDMtf") {
+    	id // it returns null after deletion
+    }
+    }
+```
+```
+  mutation {
+      editUser(id:"23", age: 27) {
+        id,
+        age,
+        firstName
+    }
+    }
+```
+5. Put request will completely replace the exisiting data, over writing the passed data and not passed data will be null
+6. where as patch replaces the only passed data and other data remains as it is.
+
+7. 
+
 
