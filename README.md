@@ -43,4 +43,64 @@ whenever the code changes.
 11. order of defining the --- is important
 12. We will always use the resolve function to solve the difference between incoming data and our model and give back the response correctly
 
+13. Circular reference will be a issue in GraphQL, It can be resolved by making fields as arrow function. so it will execute at the end of the file
+14. circular relation can be asked as deep as we want in graphql
+
+    
+15. you can use `query` has key word before the query so we can we know it is a query.
+16. Also we can name our quiery so that we can use it in future reference
+17. Openeing set of curly braces is asking the RootQueryType and nested curly bases go to their nested data.
+    ```
+    query nameofthequery {
+    company(id: "1") {
+        id,
+    users{
+      firstName,
+      company{
+        id
+      }
+    }
+    } }
+    ```
+18. you can also ask graphql the same query twice but you need to define the name of the quiery different
+    ```
+    {
+    1name: company(id: "1") {
+        id,
+    users{
+      firstName,
+      company{
+        id
+      }
+    }
+    }
+    2name: company(id: "1") {
+        id,
+    users{
+      firstName,
+      company{
+        id
+      }
+    }
+    }
+    }
+    ```
+19. Fragment can be used so that we need not to define the field names every time which we want to retrive.
+
+```
+    {
+    1name: company(id: "1") {
+        ...companydetials
+    }
+    2name: company(id: "1") {
+        ...companydetials
+    }
+    fragment companydetials on Company { // all company above will have these details when used
+    id,
+    name,
+    description
+    }
+    }
+```
+
 
