@@ -172,4 +172,7 @@ the types together.
 **Section 6 Clientside GraphQL** 
 #
 
+1. npm install - it will install all the dependecies of our projects.
+2. 
+
 
