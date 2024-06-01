@@ -142,7 +142,34 @@ Mutations can be used to delete records, update them, or even create new records
 ```
 5. Put request will completely replace the exisiting data, over writing the passed data and not passed data will be null
 6. where as patch replaces the only passed data and other data remains as it is.
+#
 
-7. 
+**Section 5 : GraphQL EcoSystem**
+
+1. In this we will learn how can we use front end technolgies with graphql like react.
+2. The bad news is that this is also where GraphQL starts to get a little bit hairy.
+GraphQL is the bleeding edge of the Internet and web design technology, and there's a lot of very rapid changes that are coming out in the GraphQL ecosystem, especially on the front end side of things. So in this section, we're going to look at some of the different evolving technologies that are used on the front end of GraphQL applications.
+3. In GraphIQl web page when you run a query that is passed as a request in the network.
+4. react application will be tightly coupled with graphql client and graphql client is basically the graphiql which sends the request through the server to get information and get back.
+5. 3 types of clients we use mostly, these are javascript clients used in the browser that interact with grapgql server on backend and react on frontend
+   1. Looka - Essentially it works very similar to what our graph graphical client is doing right now, but it also
+has some little bit of extra features for handling something called caching.
+    2. Apollo Client - It is overall project has called has Apollo Stack, The Apollo stack has both a back end GraphQL server, which we would be using in place of the Express. Apollo client is really great in terms of having a ambitious feature set while balancing that with not
+making it very difficult to work with.
+    3. Relat - Complicated, used by Facebook team, So in the relay world, handling mutations is probably like a factor of ten more challenging than the
+mutations we've put together already. Best performance on Mobile devices. Awful internet connection we can use relay for customers it is better to use.
+
+6. Apollo server - They require you to define a schema file that uses kind of a fancy markup language to describe what
+each type of data looks like and the relationship between each of them. Then in a separate file, the Apollo server would define a resolver file or a resolver set of resolver functions
+
+7. So the big difference between the Apollo Server and GraphQL Express is that GraphQL Express co-locates
+all of the type information with the resolve logic, whereas the Apollo server says, Give me just one
+location to define all my types and then a location, separate location to define how to relate all
+the types together.
+
+
+
+**Section 6 Clientside GraphQL** 
+#
 
 
