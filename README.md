@@ -176,6 +176,10 @@ the types together.
 2. .gitignore - add names of the files or folders that will be not be commited in your github.
 3. Client folder has Javascript code and UI code which is React
 4. Server folder has lot of functionality which has code related to setting up the graphql server
-5. 
+5. 7LMrfzJ97PjRZl3M
+6. mongodb+srv://saketh1111:7LMrfzJ97PjRZl3M@cluster0.4d84wyl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+7. In GraphIql, You have documentation explorer, where you can look at graphQL Schema which provides root type for each kind of peration
+
+
 
 
