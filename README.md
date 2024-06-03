@@ -173,6 +173,9 @@ the types together.
 #
 
 1. npm install - it will install all the dependecies of our projects.
-2. 
+2. .gitignore - add names of the files or folders that will be not be commited in your github.
+3. Client folder has Javascript code and UI code which is React
+4. Server folder has lot of functionality which has code related to setting up the graphql server
+5. 
 
 
