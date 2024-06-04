@@ -179,6 +179,8 @@ the types together.
 5. 7LMrfzJ97PjRZl3M
 6. mongodb+srv://saketh1111:7LMrfzJ97PjRZl3M@cluster0.4d84wyl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
 7. In GraphIql, You have documentation explorer, where you can look at graphQL Schema which provides root type for each kind of peration
+8. Apollo store and React are connected using Apollo Provider, The provider will take data from the store and inject it into our React application.
+9. 
 
 
 
